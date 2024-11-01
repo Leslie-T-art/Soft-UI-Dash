@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard | AdminHub - Tailwind CSS 3 Admin Layout & UI Kit Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Tailwind Admin Dashboard, A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+    <meta name="description" content="Download a Tailwind admin template, designed to create responsive and customizable admin dashboards quickly and efficiently. Ideal for developers and startups. ">
+    <meta name="description" content="Explore a Tailwind admin dashboard template that offers sleek, responsive designs and easy customization, perfect for managing admin interfaces with modern UI components.">
+    <meta name="description" content="Explore a Tailwind admin dashboard template with sleek, responsive designs and easy customization. Perfect for managing modern admin interfaces with top-notch UI components.">
+    <meta content="MyraStudio" name="author">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Icons css  (Mandatory in All Pages) -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+
+    <!-- App css  (Mandatory in All Pages) -->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Start Sidebar -->
+        <aside id="app-menu"
+            class="hs-overlay fixed inset-y-0 start-0 z-60 hidden w-sidenav min-w-sidenav -translate-x-full transform overflow-y-auto bg-body transition-all duration-300 hs-overlay-open:translate-x-0 lg:bottom-0 lg:end-auto lg:z-30 lg:block lg:translate-x-0 rtl:translate-x-full rtl:hs-overlay-open:translate-x-0 rtl:lg:translate-x-0 print:hidden [--body-scroll:true] [--overlay-backdrop:true] lg:[--overlay-backdrop:false]">
+            <div class="sticky top-0 flex h-16 items-center justify-center px-6">
+                <a href="index.html">
+                    <img src="assets/images/logo-dark.png" alt="logo" class="flex h-10">
+                </a>
+            </div>
+
+            <div class="h-[calc(100%-64px)] p-4 lg:ps-8" data-simplebar>
+                <ul class="admin-menu hs-accordion-group flex w-full flex-col gap-1.5">
+                    <li class="menu-item">
+                        <a class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5"
+                            href="index.html">
+                            <i data-lucide="airplay" class="size-5"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="starter-page.html"
+                            class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5">
+                            <i data-lucide="file-text" class="size-5"></i>
+                            <span class="menu-text"> Starter Pages </span>
+                        </a>
+                    </li>
+
+                    <li class="px-5 py-2 text-sm font-medium text-default-600">Elements</li>
+
+                    <li class="menu-item hs-accordion">
+                        <a href="javascript:void(0)"
+                            class="hs-accordion-toggle group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="component" class="size-5"></i>
+                            <span class="menu-text"> Components </span>
+                            <span
+                                class="i-tabler-chevron-right ms-auto text-sm transition-all hs-accordion-active:rotate-90"></span>
+                        </a>
+
+                        <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+                            <ul class="mt-2 space-y-2">
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-accordion.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Accordion
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-alerts.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Alert
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-avatars.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Avatars
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-buttons.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Buttons
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-badges.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Badges
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-breadcrumbs.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Breadcrumbs
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-cards.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Cards
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-collapse.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Collapse
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-dropdowns.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Dropdowns
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-progress.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Progress
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-spinners.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Spinners
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-skeleton.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Skeleton
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-ratio.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Ratio
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-modals.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Modals
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-offcanvas.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Offcanvas
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-popovers.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Popovers
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-tooltips.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Tooltips
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-typography.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Typography
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-item hs-accordion">
+                        <a href="javascript:void(0)"
+                            class="hs-accordion-toggle group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="notebook-pen" class="size-5"></i>
+                            <span class="menu-text"> Forms </span>
+                            <span
+                                class="i-tabler-chevron-right ms-auto text-sm transition-all hs-accordion-active:rotate-90"></span>
+                        </a>
+
+                        <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+                            <ul class="mt-2 space-y-2">
+                                <li class="menu-item">
+                                    <a href="forms-inputs.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Inputs</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="forms-check-radio.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Checkbox & Radio</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="forms-masks.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Input Masks</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="forms-editor.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Editor</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="forms-validation.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Validation</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="forms-layout.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Form Layout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="maps-vector.html"
+                            class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5">
+                            <i data-lucide="map" class="size-5"></i>
+                            <span class="menu-text"> Maps </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="tables-basic.html"
+                            class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="grid-3x3" class="size-5"></i>
+                            <span class="menu-text"> Tables </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="charts-apex.html"
+                            class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="chart-pie" class="size-5"></i>
+                            <span class="menu-text"> Chart </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="icons.html"
+                            class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5">
+                            <i data-lucide="dribbble" class="size-5"></i>
+
+                            <span class="menu-text"> Icons </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item hs-accordion">
+                        <a href="javascript:void(0)"
+                            class="hs-accordion-toggle group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="align-left" class="size-5"></i>
+                            <span class="menu-text"> Level </span>
+                            <span
+                                class="i-tabler-chevron-right ms-auto text-sm transition-all hs-accordion-active:rotate-90"></span>
+                        </a>
+
+                        <div id="sidenavLevel"
+                            class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+                            <ul class="mt-2 space-y-2">
+                                <li class="menu-item">
+                                    <a href="javascript: void(0)"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Item 1</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="javascript: void(0)"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Item 2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="javascript:void(0)"
+                            class="hs-accordion-toggle group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="badge-check" class="size-5"></i>
+                            <span class="menu-text"> Badge Items </span>
+                            <span
+                                class="ms-auto inline-flex items-center gap-x-1.5 py-0.5 px-2 rounded-md font-semibold text-xs bg-gray-800 text-white">Hot</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- End Sidebar -->
+
+
+        <!-- Mobile Nav Start -->
+        <div class="md:hidden flex">
+            <div
+                class="fixed bottom-0 z-50 shadow-md w-full h-16 flex items-center justify-between px-5 gap-4 bg-white border-b border-default-100">
+
+                <a href="#" class="flex flex-col items-center justify-center gap-1 text-default-600">
+                    <i data-lucide="gauge" class="size-5"></i>
+                    <span class="text-xs font-semibold">Home</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center gap-1 text-default-600">
+                    <i data-lucide="search" class="size-5"></i>
+                    <span class="text-xs font-semibold">Search</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center gap-1 text-default-600">
+                    <i data-lucide="compass" class="size-5"></i>
+                    <span class="text-xs font-semibold">Explore</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center gap-1 text-default-600">
+                    <i data-lucide="bell" class="size-5"></i>
+                    <span class="text-xs font-semibold">Alerts</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center gap-1 text-default-600">
+                    <i data-lucide="circle-user" class="size-5"></i>
+                    <span class="text-xs font-semibold">Profile</span>
+                </a>
+            </div>
+        </div>
+        <!-- Mobile Nav End -->
+
+        <!-- Start Page Content here -->
+        <div class="page-content">
+
+            <!-- Topbar Start -->
+            <header class="app-header md:hidden h-16 flex items-center lg:bg-opacity-10 bg-white  backdrop-blur-sm">
+                <div class="container flex items-center gap-4">
+                    <!-- Topbar Brand Logo -->
+                    <a href="index.html" class="md:hidden flex">
+                        <img src="assets/images/logo-sm.png" class="h-6" alt="Small logo">
+                    </a>
+
+                    <!-- Sidenav Menu Toggle Button -->
+                    <button id="button-toggle-menu" class="text-default-500 hover:text-default-600 p-2 rounded-full cursor-pointer"
+                        data-hs-overlay="#app-menu" aria-label="Toggle navigation">
+                        <i class="i-tabler-menu-2 text-2xl"></i>
+                    </button>
+
+                    <!-- Language Dropdown Button -->
+                    <div class="ms-auto hs-dropdown relative inline-flex [--placement:bottom-right]">
+                        <button type="button" class="hs-dropdown-toggle inline-flex items-center">
+                            <img src="assets/images/flags/us.jpg" alt="user-image" class="h-4 w-6">
+                        </button>
+
+                        <div
+                            class="hs-dropdown-menu duration mt-2 min-w-48 rounded-lg border border-default-200 bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100 hidden">
+                            <a href="javascript:void(0);"
+                                class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100">
+                                <img src="assets/images/flags/germany.jpg" alt="user-image" class="h-4">
+                                <span class="align-middle">German</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);"
+                                class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100">
+                                <img src="assets/images/flags/italy.jpg" alt="user-image" class="h-4">
+                                <span class="align-middle">Italian</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);"
+                                class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100">
+                                <img src="assets/images/flags/spain.jpg" alt="user-image" class="h-4">
+                                <span class="align-middle">Spanish</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);"
+                                class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100">
+                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="h-4">
+                                <span class="align-middle">Russian</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Fullscreen Toggle Button -->
+                    <div class="md:flex hidden">
+                        <button data-toggle="fullscreen" type="button" class="nav-link p-2">
+                            <span class="sr-only">Fullscreen Mode</span>
+                            <span class="flex items-center justify-center size-6">
+                                <i class="i-tabler-maximize text-2xl flex group-[-fullscreen]:hidden"></i>
+                                <i class="i-tabler-minimize text-2xl hidden group-[-fullscreen]:flex"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Profile Dropdown Button -->
+                    <div class="relative">
+                        <div class="hs-dropdown relative inline-flex [--placement:bottom-right]">
+                            <button type="button" class="hs-dropdown-toggle nav-link flex items-center gap-2">
+                                <img src="assets/images/users/avatar-4.jpg" alt="user-image" class="rounded-full h-10">
+                                <i class="i-tabler-chevron-down text-sm ms-2"></i>
+                            </button>
+                            <div
+                                class="hs-dropdown-menu duration mt-2 min-w-48 rounded-lg border border-default-200 bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100 hidden">
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Profile
+                                </a>
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Feed
+                                </a>
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Analytics
+                                </a>
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Settings
+                                </a>
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Support
+                                </a>
+                                <hr class="my-2">
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Log Out
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Topbar End -->
+
+            <main>
+                
+                <div class="container py-6">
+
+                <!-- Page Title Start -->
+                <div class="flex items-center md:justify-between flex-wrap gap-2 mb-6">
+                    <h4 class="text-default-900 text-lg font-medium mb-2">Input</h4>
+
+
+                    <!-- <div class="md:flex hidden items-center gap-3 text-sm font-semibold">
+                        <a href="#" class="text-sm font-medium text-default-700">AdminHub</a>
+                        <i class="material-symbols-rounded text-xl flex-shrink-0 text-default-500">chevron_right</i>
+                        <a href="#" class="text-sm font-medium text-default-700">Forms</a>
+                        <i class="material-symbols-rounded text-xl flex-shrink-0 text-default-500">chevron_right</i>
+                        <a href="#" class="text-sm font-medium text-default-700" aria-current="page">Input</a>
+                    </div> -->
+                </div>
+                <!-- Page Title End -->
+
+                <div class="flex flex-col gap-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Input</h4>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid lg:grid-cols-2 gap-6">
+
+                                <div>
+                                    <label for="simpleinput"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Text</label>
+                                    <input type="text" id="simpleinput" class="form-input">
+                                </div>
+
+                                <div>
+                                    <label for="example-email"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Email</label>
+                                    <input type="email" id="example-email" name="example-email" class="form-input"
+                                        placeholder="Email">
+                                </div>
+
+                                <div>
+                                    <label for="example-password"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Password</label>
+                                    <input type="password" id="example-password" class="form-input" value="password">
+                                </div>
+
+                                <div>
+                                    <label for="password"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Show/Hide
+                                        Password</label>
+                                    <div class="flex">
+                                        <input type="password" id="password" class="form-input"
+                                            placeholder="Enter your password">
+                                        <div class="input-group-text" data-password="false">
+                                            <span class="password-eye">*</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="example-palaceholder"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Placeholder</label>
+                                    <input type="text" id="example-palaceholder" class="form-input"
+                                        placeholder="placeholder">
+                                </div>
+
+                                <div>
+                                    <label for="example-readonly"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Readonly</label>
+                                    <input type="text" id="example-readonly" class="form-input" readonly=""
+                                        value="Readonly value">
+                                </div>
+
+                                <div>
+                                    <label for="example-disable"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Disabled</label>
+                                    <input type="text" class="form-input" id="example-disable" disabled=""
+                                        value="Disabled value">
+                                </div>
+
+                                <div>
+                                    <label for="example-date"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Date</label>
+                                    <input class="form-input" id="example-date" type="date" name="date">
+                                </div>
+
+                                <div>
+                                    <label for="example-month"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Month</label>
+                                    <input class="form-input" id="example-month" type="month" name="month">
+                                </div>
+
+                                <div>
+                                    <label for="example-time"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Time</label>
+                                    <input class="form-input" id="example-time" type="time" name="time">
+                                </div>
+
+                                <div>
+                                    <label for="example-week"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Week</label>
+                                    <input class="form-input" id="example-week" type="week" name="week">
+                                </div>
+
+                                <div>
+                                    <label for="example-number"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Number</label>
+                                    <input class="form-input" id="example-number" type="number" name="number">
+                                </div>
+
+                                <div>
+                                    <label for="example-color"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Color</label>
+                                    <input class="form-input h-10" id="example-color" type="color" name="color"
+                                        value="#1E85FF">
+                                </div>
+
+                                <div>
+                                    <label for="example-select"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Input
+                                        Select</label>
+                                    <select class="form-select" id="example-select">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="example-multiselect"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Multiple
+                                        Select</label>
+                                    <select id="example-multiselect" multiple class="form-input">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end card -->
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Input Group</h4>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid lg:grid-cols-2 gap-6">
+
+                                <div class="mb-5">
+                                    <div class="flex">
+                                        <div
+                                            class="flex items-center justify-center border border-default-200 bg-default-100 px-3 font-semibold rounded-s-md border-e-0">
+                                            @
+                                        </div>
+                                        <input type="text" placeholder="Username" class="form-input rounded-s-none" />
+                                    </div>
+                                </div>
+                                <div class="mb-5">
+                                    <div class="flex">
+                                        <input type="text" placeholder="Recipient's username"
+                                            class="form-input rounded-e-none" />
+                                        <div
+                                            class="flex items-center justify-center border border-default-200 bg-default-100 px-3 font-semibold rounded-r-md border-s-0">
+                                            @example.com
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-5">
+                                    <div class="flex">
+                                        <div
+                                            class="flex items-center justify-center border border-default-200 bg-default-100 px-3 font-semibold rounded-s-md border-e-0">
+                                            https://
+                                        </div>
+                                        <input id="url" type="text" placeholder="example.com/users/"
+                                            class="form-input rounded-s-none" />
+                                    </div>
+                                </div>
+                                <div class="mb-5">
+                                    <div class="flex">
+                                        <div
+                                            class="flex items-center justify-center border border-default-200 bg-default-100 px-3 font-semibold rounded-s-md border-e-0">
+                                            $
+                                        </div>
+                                        <input type="text" placeholder="" class="form-input rounded-none" />
+                                        <div
+                                            class="flex items-center justify-center border border-default-200 bg-default-100 px-3 font-semibold rounded-e-md border-s-0">
+                                            .00
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex rounded-md shadow-sm -space-x-px">
+                                        <span
+                                            class="px-4 inline-flex items-center rounded-s border border-gray-200 bg-gray-50 text-sm text-default-500">Default</span>
+                                        <input type="text" class="form-input rounded-s-none">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="sm:flex rounded-md shadow-sm">
+                                        <input type="text" class="form-input">
+                                        <span
+                                            class="py-2.5 px-4 inline-flex items-center min-w-fit w-full border border-gray-200 bg-gray-50 text-sm text-default-500 -mt-px -ms-px first:rounded-t-lg last:rounded-b-lg sm:w-auto sm:first:rounded-l-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-tr-none sm:last:rounded-bl-none sm:last:rounded-r-lg">
+                                            <svg class="hidden sm:block h-4 w-4 text-default-400"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z">
+                                            </svg>
+                                            <svg class="sm:hidden mx-auto h-4 w-4 text-default-400"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z">
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="form-input">
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <label for="simpleinput"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Email
+                                        Address</label>
+                                    <div class="relative">
+                                        <input type="email" id="leading-icon" name="leading-icon"
+                                            class="form-input ps-11" placeholder="you@site.com">
+                                        <div class="absolute inset-y-0 start-4 flex items-center z-20">
+                                            <i class="i-tabler-mail] text-lg text-default-400"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="simpleinput"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Text</label>
+                                    <div class="relative">
+                                        <input type="text" id="input-with-leading-and-trailing-icon"
+                                            name="input-with-leading-and-trailing-icon" class="form-input px-8"
+                                            placeholder="0.00">
+                                        <div
+                                            class="absolute inset-y-0 start-4 flex items-center pointer-events-none z-20">
+                                            <span class="text-default-500">$</span>
+                                        </div>
+                                        <div
+                                            class="absolute inset-y-0 end-4 flex items-center pointer-events-none z-20">
+                                            <span class="text-default-500">USD</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="simpleinput"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Text</label>
+                                    <div class="flex rounded-md shadow-sm">
+                                        <div
+                                            class="px-4 inline-flex items-center min-w-fit rounded-l-md border border-e-0 border-gray-200 bg-gray-50">
+                                            <span class="text-sm text-default-500">http://</span>
+                                        </div>
+                                        <input type="text" name="input-with-add-on-url" id="input-with-add-on-url"
+                                            class="form-input" placeholder="www.example.com">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="simpleinput"
+                                        class="text-default-800 text-sm font-medium inline-block mb-2">Text</label>
+                                    <div class="flex rounded-md shadow-sm">
+                                        <div
+                                            class="px-4 inline-flex items-center min-w-fit rounded-l-md border border-e-0 border-gray-200 bg-gray-50">
+                                            <span class="text-sm text-default-500">$</span>
+                                        </div>
+                                        <div
+                                            class="px-4 inline-flex items-center min-w-fit border border-e-0 border-gray-200 bg-gray-50">
+                                            <span class="text-sm text-default-500">0.00</span>
+                                        </div>
+                                        <input type="text" id="leading-multiple-add-on" name="inline-add-on"
+                                            class="form-input" placeholder="www.example.com">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+
+            </div>
+
+            </main>
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+
+    <!-- Plugin Js (Mandatory in All Pages) -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/preline/preline.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/lucide/umd/lucide.min.js"></script>
+    <script src="assets/libs/iconify-icon/iconify-icon.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- App Js (Mandatory in All Pages) -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
