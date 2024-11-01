@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard | AdminHub - Tailwind CSS 3 Admin Layout & UI Kit Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Tailwind Admin Dashboard, A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+    <meta name="description" content="Download a Tailwind admin template, designed to create responsive and customizable admin dashboards quickly and efficiently. Ideal for developers and startups. ">
+    <meta name="description" content="Explore a Tailwind admin dashboard template that offers sleek, responsive designs and easy customization, perfect for managing admin interfaces with modern UI components.">
+    <meta name="description" content="Explore a Tailwind admin dashboard template with sleek, responsive designs and easy customization. Perfect for managing modern admin interfaces with top-notch UI components.">
+    <meta content="MyraStudio" name="author">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Icons css  (Mandatory in All Pages) -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+
+    <!-- App css  (Mandatory in All Pages) -->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Start Sidebar -->
+        <aside id="app-menu"
+            class="hs-overlay fixed inset-y-0 start-0 z-60 hidden w-sidenav min-w-sidenav -translate-x-full transform overflow-y-auto bg-body transition-all duration-300 hs-overlay-open:translate-x-0 lg:bottom-0 lg:end-auto lg:z-30 lg:block lg:translate-x-0 rtl:translate-x-full rtl:hs-overlay-open:translate-x-0 rtl:lg:translate-x-0 print:hidden [--body-scroll:true] [--overlay-backdrop:true] lg:[--overlay-backdrop:false]">
+            <div class="sticky top-0 flex h-16 items-center justify-center px-6">
+                <a href="index.html">
+                    <img src="assets/images/logo-dark.png" alt="logo" class="flex h-10">
+                </a>
+            </div>
+
+            <div class="h-[calc(100%-64px)] p-4 lg:ps-8" data-simplebar>
+                <ul class="admin-menu hs-accordion-group flex w-full flex-col gap-1.5">
+                    <li class="menu-item">
+                        <a class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5"
+                            href="index.html">
+                            <i data-lucide="airplay" class="size-5"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="starter-page.html"
+                            class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5">
+                            <i data-lucide="file-text" class="size-5"></i>
+                            <span class="menu-text"> Starter Pages </span>
+                        </a>
+                    </li>
+
+                    <li class="px-5 py-2 text-sm font-medium text-default-600">Elements</li>
+
+                    <li class="menu-item hs-accordion">
+                        <a href="javascript:void(0)"
+                            class="hs-accordion-toggle group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="component" class="size-5"></i>
+                            <span class="menu-text"> Components </span>
+                            <span
+                                class="i-tabler-chevron-right ms-auto text-sm transition-all hs-accordion-active:rotate-90"></span>
+                        </a>
+
+                        <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+                            <ul class="mt-2 space-y-2">
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-accordion.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Accordion
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-alerts.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Alert
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-avatars.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Avatars
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-buttons.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Buttons
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-badges.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Badges
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-breadcrumbs.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Breadcrumbs
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-cards.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Cards
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-collapse.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Collapse
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-dropdowns.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Dropdowns
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-progress.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Progress
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-spinners.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Spinners
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-skeleton.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Skeleton
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-ratio.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Ratio
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-modals.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Modals
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-offcanvas.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Offcanvas
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-popovers.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Popovers
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-tooltips.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Tooltips
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5"
+                                        href="ui-typography.html">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        Typography
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-item hs-accordion">
+                        <a href="javascript:void(0)"
+                            class="hs-accordion-toggle group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="notebook-pen" class="size-5"></i>
+                            <span class="menu-text"> Forms </span>
+                            <span
+                                class="i-tabler-chevron-right ms-auto text-sm transition-all hs-accordion-active:rotate-90"></span>
+                        </a>
+
+                        <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+                            <ul class="mt-2 space-y-2">
+                                <li class="menu-item">
+                                    <a href="forms-inputs.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Inputs</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="forms-check-radio.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Checkbox & Radio</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="forms-masks.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Input Masks</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="forms-editor.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Editor</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="forms-validation.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Validation</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="forms-layout.html"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Form Layout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="maps-vector.html"
+                            class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5">
+                            <i data-lucide="map" class="size-5"></i>
+                            <span class="menu-text"> Maps </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="tables-basic.html"
+                            class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="grid-3x3" class="size-5"></i>
+                            <span class="menu-text"> Tables </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="charts-apex.html"
+                            class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="chart-pie" class="size-5"></i>
+                            <span class="menu-text"> Chart </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="icons.html"
+                            class="group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5">
+                            <i data-lucide="dribbble" class="size-5"></i>
+
+                            <span class="menu-text"> Icons </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item hs-accordion">
+                        <a href="javascript:void(0)"
+                            class="hs-accordion-toggle group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="align-left" class="size-5"></i>
+                            <span class="menu-text"> Level </span>
+                            <span
+                                class="i-tabler-chevron-right ms-auto text-sm transition-all hs-accordion-active:rotate-90"></span>
+                        </a>
+
+                        <div id="sidenavLevel"
+                            class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+                            <ul class="mt-2 space-y-2">
+                                <li class="menu-item">
+                                    <a href="javascript: void(0)"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Item 1</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="javascript: void(0)"
+                                        class="flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-700 hover:bg-default-900/5">
+                                        <i class="i-tabler-circle-filled scale-25 text-lg opacity-75"></i>
+                                        <span class="menu-text">Item 2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="javascript:void(0)"
+                            class="hs-accordion-toggle group flex items-center gap-x-4 rounded-md px-3 py-2 text-sm font-medium text-default-700 transition-all hover:bg-default-900/5 hs-accordion-active:bg-default-900/5 hs-accordion-active:text-default-700">
+                            <i data-lucide="badge-check" class="size-5"></i>
+                            <span class="menu-text"> Badge Items </span>
+                            <span
+                                class="ms-auto inline-flex items-center gap-x-1.5 py-0.5 px-2 rounded-md font-semibold text-xs bg-gray-800 text-white">Hot</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- End Sidebar -->
+
+
+        <!-- Mobile Nav Start -->
+        <div class="md:hidden flex">
+            <div
+                class="fixed bottom-0 z-50 shadow-md w-full h-16 flex items-center justify-between px-5 gap-4 bg-white border-b border-default-100">
+
+                <a href="#" class="flex flex-col items-center justify-center gap-1 text-default-600">
+                    <i data-lucide="gauge" class="size-5"></i>
+                    <span class="text-xs font-semibold">Home</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center gap-1 text-default-600">
+                    <i data-lucide="search" class="size-5"></i>
+                    <span class="text-xs font-semibold">Search</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center gap-1 text-default-600">
+                    <i data-lucide="compass" class="size-5"></i>
+                    <span class="text-xs font-semibold">Explore</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center gap-1 text-default-600">
+                    <i data-lucide="bell" class="size-5"></i>
+                    <span class="text-xs font-semibold">Alerts</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center gap-1 text-default-600">
+                    <i data-lucide="circle-user" class="size-5"></i>
+                    <span class="text-xs font-semibold">Profile</span>
+                </a>
+            </div>
+        </div>
+        <!-- Mobile Nav End -->
+
+        <!-- Start Page Content here -->
+        <div class="page-content">
+
+            <!-- Topbar Start -->
+            <header class="app-header md:hidden h-16 flex items-center lg:bg-opacity-10 bg-white  backdrop-blur-sm">
+                <div class="container flex items-center gap-4">
+                    <!-- Topbar Brand Logo -->
+                    <a href="index.html" class="md:hidden flex">
+                        <img src="assets/images/logo-sm.png" class="h-6" alt="Small logo">
+                    </a>
+
+                    <!-- Sidenav Menu Toggle Button -->
+                    <button id="button-toggle-menu" class="text-default-500 hover:text-default-600 p-2 rounded-full cursor-pointer"
+                        data-hs-overlay="#app-menu" aria-label="Toggle navigation">
+                        <i class="i-tabler-menu-2 text-2xl"></i>
+                    </button>
+
+                    <!-- Language Dropdown Button -->
+                    <div class="ms-auto hs-dropdown relative inline-flex [--placement:bottom-right]">
+                        <button type="button" class="hs-dropdown-toggle inline-flex items-center">
+                            <img src="assets/images/flags/us.jpg" alt="user-image" class="h-4 w-6">
+                        </button>
+
+                        <div
+                            class="hs-dropdown-menu duration mt-2 min-w-48 rounded-lg border border-default-200 bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100 hidden">
+                            <a href="javascript:void(0);"
+                                class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100">
+                                <img src="assets/images/flags/germany.jpg" alt="user-image" class="h-4">
+                                <span class="align-middle">German</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);"
+                                class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100">
+                                <img src="assets/images/flags/italy.jpg" alt="user-image" class="h-4">
+                                <span class="align-middle">Italian</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);"
+                                class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100">
+                                <img src="assets/images/flags/spain.jpg" alt="user-image" class="h-4">
+                                <span class="align-middle">Spanish</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);"
+                                class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100">
+                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="h-4">
+                                <span class="align-middle">Russian</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Fullscreen Toggle Button -->
+                    <div class="md:flex hidden">
+                        <button data-toggle="fullscreen" type="button" class="nav-link p-2">
+                            <span class="sr-only">Fullscreen Mode</span>
+                            <span class="flex items-center justify-center size-6">
+                                <i class="i-tabler-maximize text-2xl flex group-[-fullscreen]:hidden"></i>
+                                <i class="i-tabler-minimize text-2xl hidden group-[-fullscreen]:flex"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Profile Dropdown Button -->
+                    <div class="relative">
+                        <div class="hs-dropdown relative inline-flex [--placement:bottom-right]">
+                            <button type="button" class="hs-dropdown-toggle nav-link flex items-center gap-2">
+                                <img src="assets/images/users/avatar-4.jpg" alt="user-image" class="rounded-full h-10">
+                                <i class="i-tabler-chevron-down text-sm ms-2"></i>
+                            </button>
+                            <div
+                                class="hs-dropdown-menu duration mt-2 min-w-48 rounded-lg border border-default-200 bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100 hidden">
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Profile
+                                </a>
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Feed
+                                </a>
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Analytics
+                                </a>
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Settings
+                                </a>
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Support
+                                </a>
+                                <hr class="my-2">
+                                <a class="flex items-center py-2 px-3 rounded-md text-sm text-default-800 hover:bg-gray-100"
+                                    href="#">
+                                    Log Out
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Topbar End -->
+
+            <main>
+                
+                <div class="container py-6">
+
+                <!-- Page Title Start -->
+                <div class="flex items-center md:justify-between flex-wrap gap-2 mb-6">
+                    <h4 class="text-default-900 text-lg font-medium mb-2">Dropdown</h4>
+
+
+                    <!-- <div class="md:flex hidden items-center gap-3 text-sm font-semibold">
+                        <a href="#" class="text-sm font-medium text-default-700">AdminHub</a>
+                        <i class="material-symbols-rounded text-xl flex-shrink-0 text-default-500">chevron_right</i>
+                        <a href="#" class="text-sm font-medium text-default-700">Components</a>
+                        <i class="material-symbols-rounded text-xl flex-shrink-0 text-default-500">chevron_right</i>
+                        <a href="#" class="text-sm font-medium text-default-700" aria-current="page">Dropdown</a>
+                    </div> -->
+                </div>
+                <!-- Page Title End -->
+
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="">
+                                <h5 class="text-lg font-medium text-default-950 capitalize mb-1">Default Dropdowns
+                                </h5>
+                                <p class="text-default-600 text-sm font-medium">The default dropdown menu
+                                    appearance.</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <div class="hs-dropdown relative">
+                                    <button id="hs-dropdown-default" type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-flex items-center justify-center font-semibold tracking-wide border align-middle duration-500 text-sm text-center bg-primary hover:bg-primary-600 border-primary hover:border-primary-600 text-white rounded-md">
+                                        Primary <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative">
+                                    <button id="hs-dropdown-default" type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-flex items-center justify-center font-semibold tracking-wide border align-middle duration-500 text-sm text-center bg-gray-500 hover:bg-gray-600 border-gray-500 hover:border-gray-600 text-white rounded-md">
+                                        Gray <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="">
+                                <h5 class="text-lg font-medium text-default-950 capitalize mb-1">Menu alignment</h5>
+                                <p class="text-default-600 text-sm font-medium">Dropdown menu alignments.</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="flex flex-wrap gap-2">
+                                <div class="hs-dropdown relative [--placement:right-top]">
+                                    <button type="button"
+                                        class="py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-default-900 bg-default-100 hover:bg-default-200 border-default-100 hover:border-default-200 rounded-md">
+                                        Dropdown Right <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative [--placement:left-top]">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-default-900 bg-default-100 hover:bg-default-200 border-default-100 hover:border-default-200 rounded-md">
+                                        Dropdown left <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative [--placement:top]">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-default-900 bg-default-100 hover:bg-default-200 border-default-100 hover:border-default-200 rounded-md">
+                                        Dropdown Top <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative [--placement:bottom]">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-default-900 bg-default-100 hover:bg-default-200 border-default-100 hover:border-default-200 rounded-md">
+                                        Dropdown Bottom <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative [--placement:top-left]">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-default-900 bg-default-100 hover:bg-default-200 border-default-100 hover:border-default-200 rounded-md">
+                                        Top Left <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative [--placement:top-right]">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-default-900 bg-default-100 hover:bg-default-200 border-default-100 hover:border-default-200 rounded-md">
+                                        Top Right <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="">
+                                <h5 class="text-lg font-medium text-default-950 capitalize mb-1">Color Variant</h5>
+                                <p class="text-default-600 text-sm font-medium">Dropdown menu alignments.</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="flex flex-wrap gap-2">
+                                <div class="hs-dropdown relative">
+                                    <button type="button"
+                                        class="py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-white bg-primary hover:bg-primary-600 border-primary hover:border-primary-600 rounded-md">
+                                        Primary <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-white bg-gray-500 hover:bg-gray-600 border-gray-500 hover:border-gray-600 rounded-md">
+                                        Gray <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-white bg-teal-500 hover:bg-teal-600 border-teal-500 hover:border-teal-600 rounded-md">
+                                        Teal <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-white bg-blue-500 hover:bg-blue-600 border-blue-500 hover:border-blue-600 rounded-md">
+                                        Blue <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-white bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 rounded-md">
+                                        Yellow <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-white bg-cyan-500 hover:bg-cyan-600 border-cyan-500 hover:border-cyan-600 rounded-md">
+                                        Cyan <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-white bg-sky-500 hover:bg-sky-600 border-sky-500 hover:border-sky-600 rounded-md">
+                                        sky <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-white bg-indigo-500 hover:bg-indigo-600 border-indigo-500 hover:border-indigo-600 rounded-md">
+                                        Indigo <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown relative">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle py-2 px-5 inline-block font-medium tracking-wide border align-middle duration-500 text-sm text-center text-white bg-purple-500 hover:bg-purple-600 border-purple-500 hover:border-purple-600 rounded-md">
+                                        Purple <i class="i-tabler-chevron-down ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <ul class="flex flex-col gap-1">
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-400/10 rounded"
+                                                    href="#">Somthing else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="">
+                                <h5 class="text-lg font-medium text-default-950 capitalize mb-1">Variant</h5>
+                                <p class="text-default-600 text-sm font-medium">Dropdown menu alignments.</p>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="flex flex-wrap gap-2">
+                                <div class="hs-dropdown [--auto-close:inside]">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle inline-flex items-center gap-2 py-2 px-6 text-base text-center bg-primary hover:bg-primary-700 text-white rounded-md transition-all duration-500">
+                                        Radio <i class="h-4 w-4 ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <div
+                                            class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-100 rounded">
+                                            <div class="flex items-center">
+                                                <input type="radio" name="default-radio"
+                                                    class="h-4 w-4 border-default-200 bg-default-50 text-primary-600 shadow-sm focus:border-primary-300 focus:ring focus:ring-primary/60 focus:ring-offset-0"
+                                                    id="default-radio">
+                                                <label for="default-radio" class="text-sm text-default-600 ms-2">Default
+                                                    radio</label>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-100 rounded">
+                                            <div class="flex items-center">
+                                                <input type="radio" name="default-radio"
+                                                    class="h-4 w-4 border-default-200 bg-default-50 text-primary-600 shadow-sm focus:border-primary-300 focus:ring focus:ring-primary/60 focus:ring-offset-0"
+                                                    id="checked-radio" checked="">
+                                                <label for="checked-radio" class="text-sm text-default-600 ms-2">Checked
+                                                    radio</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown [--auto-close:inside]">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle inline-flex items-center gap-2 py-2 px-6 text-base text-center bg-primary hover:bg-primary-700 text-white rounded-md transition-all duration-500">
+                                        CheckBox <i class="i-tabler-chevron-down h-4 w-4 ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-1.5 hidden">
+                                        <div
+                                            class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-100 rounded">
+                                            <div class="flex items-center">
+                                                <input type="checkbox"
+                                                    class="h-4 w-4 rounded border-default-200 bg-default-50 text-primary-600 shadow-sm focus:border-primary-300 focus:ring focus:ring-primary/60 focus:ring-offset-0"
+                                                    id="default-checkbox">
+                                                <label for="default-checkbox"
+                                                    class="text-sm text-default-600 ms-2">Default checkbox</label>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-100 rounded">
+                                            <div class="flex items-center">
+                                                <input type="checkbox"
+                                                    class="h-4 w-4 rounded border-default-200 bg-default-50 text-primary-600 shadow-sm focus:border-primary-300 focus:ring focus:ring-primary/60 focus:ring-offset-0"
+                                                    id="checked-checkbox" checked="">
+                                                <label for="checked-checkbox"
+                                                    class="text-sm text-default-600 ms-2">Checked checkbox</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown [--auto-close:inside]">
+                                    <button type="button"
+                                        class="hs-dropdown-toggle inline-flex items-center gap-2 py-2 px-6 text-base text-center bg-primary hover:bg-primary-700 text-white rounded-md transition-all duration-500">
+                                        Form <i class="h-4 w-4 ms-1"></i>
+                                    </button>
+
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 p-4 hidden">
+                                        <form class="">
+                                            <div class="mb-3 space-y-1">
+                                                <label for="exampleInputEmail1"
+                                                    class="text-default-800 font-medium">Email address</label>
+                                                <input type="email"
+                                                    class="block w-full rounded py-1.5 px-3 bg-transparent border-default-200 text-default-900 focus:ring-transparent focus:border-default-200"
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                    placeholder="Enter email">
+                                                <span class="inline-block"><small id="emailHelp"
+                                                        class="form-text text-sm text-default-700">We'll never share
+                                                        your email with anyone else.</small></span>
+                                            </div>
+                                            <div class="mb-3 space-y-1">
+                                                <label for="exampleInputPassword1"
+                                                    class="text-default-800 font-medium">Password</label>
+                                                <input type="password"
+                                                    class="block w-full rounded py-1.5 px-3 bg-transparent border-default-200 text-default-900 focus:ring-transparent focus:border-default-200"
+                                                    id="exampleInputPassword1" placeholder="Password">
+                                            </div>
+                                            <div class="flex items-center gap-2 mb-3">
+                                                <input type="checkbox"
+                                                    class="h-4 w-4 rounded border-default-200 bg-default-50 text-primary-600 shadow-sm focus:border-primary-300 focus:ring focus:ring-primary/60 focus:ring-offset-0"
+                                                    id="checkmeout0">
+                                                <label class="text-default-800 text-sm font-medium inline-block"
+                                                    for="checkmeout0">Check me out !</label>
+                                            </div>
+                                            <button type="submit"
+                                                class="inline-block py-2 px-4 text-sm text-center bg-primary hover:bg-primary-700 text-white rounded transition-all duration-500">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="hs-dropdown">
+                                    <button
+                                        class="hs-dropdown-toggle h-10 w-10 inline-flex items-center justify-center bg-primary text-white rounded-md transition-all duration-500 hover:bg-primary-700"><i
+                                            data-ti="more-vertical" class="h-4 w-4"></i></button>
+                                    <div
+                                        class="hs-dropdown-menu hs-dropdown-open:opacity-100 min-w-48 transition-[opacity,margin] mt-4 opacity-0 z-10 bg-white shadow-lg rounded-lg border border-default-100 hidden">
+                                        <ul class="flex flex-col gap-1 py-1.5">
+                                            <li class="mx-1.5">
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-100 rounded"
+                                                    href="#">Action</a>
+                                            </li>
+                                            <li class="mx-1.5">
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-100 rounded"
+                                                    href="#">Another Action</a>
+                                            </li>
+                                            <li class="mx-1.5">
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-100 rounded"
+                                                    href="#">Menu Item</a>
+                                            </li>
+                                            <hr class="border-default-200">
+                                            <li class="mx-1.5">
+                                                <a class="flex items-center font-normal text-default-600 py-2 px-3 transition-all hover:text-default-700 hover:bg-default-100 rounded"
+                                                    href="#">Something else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </main>
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+
+    <!-- Plugin Js (Mandatory in All Pages) -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/preline/preline.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/lucide/umd/lucide.min.js"></script>
+    <script src="assets/libs/iconify-icon/iconify-icon.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- App Js (Mandatory in All Pages) -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
